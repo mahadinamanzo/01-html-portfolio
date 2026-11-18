@@ -54,6 +54,15 @@ function createProjectCard(project, index, isFeatured) {
   repoLink.textContent = "View repository ↗";
   links.append(repoLink);
 
+  if (project.caseStudy) {
+    const caseStudyLink = document.createElement("a");
+    caseStudyLink.href = project.caseStudy;
+    caseStudyLink.target = "_blank";
+    caseStudyLink.rel = "noreferrer";
+    caseStudyLink.textContent = "Case study ↗";
+    links.append(caseStudyLink);
+  }
+
   if (project.live) {
     const liveLink = document.createElement("a");
     liveLink.href = project.live;

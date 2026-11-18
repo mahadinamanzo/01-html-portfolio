@@ -92,6 +92,7 @@ const projects = [
     stack: ["React", "JavaScript", "CSS"],
     category: "frontend",
     repo: "https://github.com/mahadinamanzo/13-react-quiz",
+    caseStudy: "https://github.com/mahadinamanzo/13-react-quiz/blob/main/README.md",
   },
   {
     title: "Next.js Company Site",
