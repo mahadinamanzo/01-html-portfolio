@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta name="description" content="A collection of 16 projects built during a two-week web development programme.">
+    <title>Projects — Mahadin Amanzo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/projects.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Mahadin Amanzo, home">ma<span>.</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#projects" aria-current="page">Projects <span>16</span></a>
+        <a href="https://github.com/mahadinamanzo" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="status-dot"></span> TWO WEEKS. SIXTEEN BUILDS.</p>
+        <h1 id="page-title">Learning by<br><span>making things.</span></h1>
+        <div class="intro-bottom">
+          <p class="intro-copy">A hands-on sprint from my first HTML page to a full-stack project tracker. Here’s everything I built along the way.</p>
+          <a class="text-link" href="#projects">Explore the work <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="intro-mark" aria-hidden="true">16<span>×</span></div>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE COLLECTION / 01—16</p>
+            <h2 id="projects-heading">Selected work<span class="heading-dot">.</span></h2>
+          </div>
+          <p class="section-note">Small steps, real projects.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter projects by technology">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All <span>16</span></button>
+          <button class="filter-button" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="filter-button" type="button" data-filter="php" aria-pressed="false">PHP &amp; MySQL</button>
+          <button class="filter-button" type="button" data-filter="node" aria-pressed="false">Node.js</button>
+          <button class="filter-button" type="button" data-filter="nextjs" aria-pressed="false">Next.js</button>
+        </div>
+
+        <div class="featured-heading">
+          <h3>Featured</h3>
+          <span>THE DEEP DIVES</span>
+        </div>
+        <div class="featured-grid" id="featured-projects" aria-label="Featured projects"></div>
+
+        <div class="all-projects-heading">
+          <h3>All projects</h3>
+          <p id="project-count" aria-live="polite">16 projects</p>
+        </div>
+        <div class="project-grid" id="project-list"></div>
+        <p class="empty-state" id="empty-state" hidden>No projects in this category yet.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#top">ma<span>.</span></a>
+      <p>Built one project at a time.</p>
+      <a class="footer-link" href="https://github.com/mahadinamanzo" target="_blank" rel="noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
+</html>
